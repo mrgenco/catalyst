@@ -1,22 +1,27 @@
 # catalyst
 a productivity tool for your terminal commands.
 
-** Still under development **
+**Still under development**
 
-# Example usage
+## Example usage
 cd -> src
 
-# create new short command
+### create new short command
+```sh
 node cli create
 Enter your full command : flutter emulators --launch my-emulator
 Enter your short command : startmyemu
-
-# execute your short command
+```
+### execute your short command
+```sh
 node cli startmyemu
-
-# get a spesific short command
+```
+### get a spesific short command***
+```sh
 node cli get ${shorcommand}
-
-# list all commands
+```
+### list all commands
+```sh
 node cli all
+```
 
