@@ -6,22 +6,22 @@ a productivity tool for your terminal commands.
 ## Example usage
 cd -> src
 
-### create new short command
+### create a new short command
 ```sh
-node cli create
+$ node cli create
 Enter your full command : flutter emulators --launch my-emulator
 Enter your short command : startmyemu
 ```
 ### execute your short command
 ```sh
-node cli startmyemu
+$ node cli startmyemu
 ```
 ### get a spesific short command***
 ```sh
-node cli get ${shorcommand}
+$ node cli get ${shortcommand}
 ```
 ### list all commands
 ```sh
-node cli all
+$ node cli all
 ```
 
