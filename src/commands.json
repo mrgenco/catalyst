@@ -1,0 +1,8 @@
+{
+  "commands": [
+    {
+      "fullCommand": "flutter emulators --launch mrg-emulator",
+      "shortCommand": "startemu"
+    }
+  ]
+}
