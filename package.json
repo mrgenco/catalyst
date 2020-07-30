@@ -1,15 +1,20 @@
 {
-  "name": "commander",
+  "name": "commando",
   "version": "1.0.0",
   "description": "commander is a utility project for your terminal commands.",
-  "main": "cli.js",
+  "main": "bin/cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "mrgenco@gmail.com",
   "license": "MIT",
+  "bin": {
+    "commando": "./bin/commando.js"
+  },
   "dependencies": {
+    "boxen": "^4.0.0",
+    "chalk": "^2.4.2",
     "lowdb": "^1.0.0",
     "prompt-sync": "^4.2.0"
   }

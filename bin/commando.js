@@ -1,38 +1,36 @@
+#!/usr/bin/env node
+
 const prompt = require('prompt-sync')({ sigint: true });
 const low = require('lowdb')
 const FileSync = require('lowdb/adapters/FileSync')
-const adapter = new FileSync('commands.json')
+const adapter = new FileSync('commandos.json')
 const db = low(adapter)
 const { exec } = require("child_process");
 
 // Set some defaults (required if your JSON file is empty)
-db.defaults({ commands: [] }).write()
+db.defaults({ commandos: [] }).write()
 
 var args = process.argv.slice(2);
 
 switch (args[0]) {
     case 'create':
         create();
-        console.log('create method is called');
         break;
     case 'all':
         all();
-        console.log('all method is called');
         break;
     case 'get':
         get(args[1]);
-        console.log('get method is called');
         break;
     default:
         execute(args[0]);
-        console.log('execute method is called');
 }
 
 function create() {
-    const fullCommand = prompt('Enter your full command :');
-    const shortCommand = prompt('Enter your short command :');
+    const fullCommand = prompt('Enter a full commando :');
+    const shortCommand = prompt('Enter a short commando :');
     // Add a command
-    db.get('commands').push({
+    db.get('commandos').push({
         fullCommand: fullCommand,
         shortCommand: shortCommand
     }).write()
@@ -40,19 +38,19 @@ function create() {
 }
 
 function all() {
-    const result = db.get('commands').value();
+    const result = db.get('commandos').value();
     console.log(result);
 }
 
 function get(command) {
-    const result = db.get('commands').find({ shortCommand: command }).value();
+    const result = db.get('commandos').find({ shortCommand: command }).value();
     console.log(result);
 }
 
 function execute(command) {
-    const result = db.get('commands').find({ shortCommand: command }).value();
+    const result = db.get('commandos').find({ shortCommand: command }).value();
     if (result === undefined)
-        console.log('There is no predefined command called : ' + command);
+        console.log('There is no predefined commando called : ' + command);
     else {
         exec(result.fullCommand, (error, stdout, stderr) => {
             if (error) {

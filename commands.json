@@ -1,6 +1,10 @@
 {
   "commands": [
     {
+      "fullCommand": "deneme",
+      "shortCommand": "d"
+    },
+    {
       "fullCommand": "flutter emulators --launch mrg-emulator",
       "shortCommand": "startemu"
     }
