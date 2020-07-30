@@ -36,7 +36,7 @@ function create() {
         fullCommand: fullCommand,
         shortCommand: shortCommand
     }).write()
-
+    console.log('new short command added! : ' + shortCommand);
 }
 
 function all() {
@@ -63,7 +63,7 @@ function execute(command) {
                 console.log(`stderr: ${stderr}`);
                 return;
             }
-            console.log(`stdout: ${stdout}`);
+            console.log(stdout);
         });
     }
 }
