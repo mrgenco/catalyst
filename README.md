@@ -1,7 +1,5 @@
-# catalyst
-a productivity tool for your terminal commands.
-
-**Still under development**
+### commando helps you create the short versions of your long, boring terminal commands.
+### It is a productivity tool for developers and system admins.
 
 ## Example usage
 cd -> src
