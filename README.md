@@ -1,7 +1,7 @@
 commando helps you create the short versions of your long, boring terminal commands.  
 It is a productivity tool for developers and sys. admins.
 
-## Install the script globally
+### Install the script globally
 ```sh
 npm install -g .
 ```
