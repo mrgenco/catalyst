@@ -2,7 +2,7 @@
   "name": "commando",
   "version": "1.0.0",
   "description": "commander is a utility project for your terminal commands.",
-  "main": "bin/cli.js",
+  "main": "bin/commando.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
