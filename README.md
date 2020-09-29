@@ -12,8 +12,8 @@ $ npm install -g .
 ### Create a new short command
 ```sh
 $ commando create
-Enter your full command : ${yourlongcommand} (Ex : flutter emulators --launch my-emulator)
-Enter your short command : ${yourshortcommand} (Ex : runemu)
+Enter your full command : yourlongcommand (Ex : flutter emulators --launch my-emulator)
+Enter your short command : yourshortcommand (Ex : runemu)
 ```
 ### Execute your short command
 ```sh
