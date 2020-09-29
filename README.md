@@ -17,11 +17,11 @@ Enter your short command : yourshortcommand (Ex : runemu)
 ```
 ### Execute your short command
 ```sh
-$ commando ${yourshortcommand}
+$ commando yourshortcommand
 ```
 ### Get a spesific short command
 ```sh
-$ commando get ${yourshortcommand}
+$ commando get yourshortcommand
 ```
 ### List all commands
 ```sh
