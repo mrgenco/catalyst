@@ -1,4 +1,4 @@
-commando helps you create the short versions of your long, boring terminal commands.  
+commando helps you create shorter versions of your long, boring terminal commands.  
 It is a productivity tool for developers and sys. admins.
 
 ### Install the required dependencies
